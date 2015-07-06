@@ -109,7 +109,7 @@ public class ParameterAction implements MainInterface{
                 int month = Integer.parseInt(stringDate.substring(2, 4));
                 int year = Integer.parseInt(stringDate.substring(4, 8));
 
-                if (day < 1 || day > 31 || month < 1 ||  month > 12 || year < 1970 || year > 2025 ||
+                if (day < 1 || day > 31 || month < 1 ||  month > 12 || year > 2025 ||
                         (month == 2 && day > 28) ||
                         ((month ==4 || month ==6 || month ==9 || month ==11) && day > 30 ))
                 {
