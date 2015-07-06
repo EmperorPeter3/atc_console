@@ -2,7 +2,7 @@
 The console application that takes the input parameters from the command line 
 and displays the message, depending on this parameters.
 
-Format of a parameters: -T<name>=<value>
+Format of a parameters: -T&lt;name&gt;=&lt;value&gt;
 
 name: "week","fact".
 
