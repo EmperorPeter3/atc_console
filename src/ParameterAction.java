@@ -7,7 +7,7 @@ import java.util.Objects;
 //Класс ParameterAction объявлен не абстрактным, т.к. он реализовал все
 // унаследованные от интерфейса MainInterface методы.
 
-public class ParameterAction implements MainInterface{
+public class ParameterAction implements MainInterface {
 
     @Override
     /**
@@ -77,8 +77,7 @@ public class ParameterAction implements MainInterface{
      * @param parameterAction a string-action which define in defineAndCheckParameterAction
      * @return an action of parameter.
      */
-    public Object getParameterAction (String str, String parameterAction){
-        Object result = null;
+    public void getParameterAction (String str, String parameterAction){
         switch (parameterAction){
             case "week":
                 if (checkWeek(str))
@@ -87,9 +86,7 @@ public class ParameterAction implements MainInterface{
             case "fact":
                 checkAndGetFact(str);
                 break;
-            //default: result = "Existing action";
         }
-        return result;
     }
 
     @Override
